@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  /*border:  1px solid red;*/
+  font-family: 'Raleway', sans-serif;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+body{
+    width: 90%;
+    margin: 10px auto;   
+    
+}
+header{
+    height: 80px;
+    padding: 10px;
+}
+main{
+    width: 80%;
+    margin: 0px auto;
+}
+
+section{
+    width: 80%;
+    margin: 0px auto;
+}
+.inicio{
+    width: 300px ;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-inicio{
+    width: 80%;
+    height: 60px;
+    margin: 10px auto;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+   
+}
+
+.btn-inicio:hover{
+    width: 80%;
+    height: 60px;
+    margin: 10px auto;
+    color: #fff;
+    background-color: #0a3871;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    font-size: 1em;
+   
+}
+.agregar{
+    width: 300px ;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    visibility: collapse;
+}
+input{
+    height: 60px;
+    text-align: center;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    background: #f8f8f8;
+    font-size: 1em;
+    color: #0a3871;
+}
+.btn-agregar{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-agregar-g{
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+}
+.btn-agregar-g:hover{
+    background: #0a3871;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+    font-size: 1em;
+}
+
+.jugar{
+    width: 80%;
+    margin: 10px auto;
+    visibility: collapse;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+.img-ahorcado{
+    width: 500px;
+    margin: 10px auto;
+}
+samp{
+    text-align: center;
+}
+.oculto {
+
+    margin: 20px 40%;
+    width: 100%;
+    color: #00fc26;
+   visibility: collapse;
+}
+
+span#mensajeDerrota {
+    visibility: collapse;
+    margin: 10px 30%;
+    padding: 10px;
+    color: #ff0000;
+}
+
+span.equivocadas {
+    margin: 5px;
+    font-size: 1em;
+}
+
+.correctas{
+    margin: 10px ;
+    padding: 10px;
+}
+.incorrectas{
+    margin: 10px ;
+    padding: 10px;
+
+}
+.btn-jugar{
+width: 500px;
+margin: 10px auto;
+}
+.btn-jugar-j{
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+}
+.btn-jugar-j:hover{
+    background: #0a3871;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+    font-size: 1em;
+}
+
+.correctas{
+    text-align: center;
+    padding: 9px;
+    font-size: 1em;
+}
+
+
+#spanLetras {
+    margin: 10px;
+    height: 60px;
+    border-bottom: 6px solid #1069bd;
+     animation: anim-reslt 4s linear;
+    color: #1069bd;
+    font-size: 2em;
+    padding: 10px;
+    
+}
+
+@keyframes anim-reslt { /*animar las salidas de las letras*/
+    0%{
+        color: #fff;
+        font-size: 0em;
+        
+    }
+    20%{
+        color: #1069bd;
+        font-size: 2em;
+        
+    }
+}
+
+div#palabrasEquivocadas {
+    text-align: center;
+    padding: 10px;
+    color: #afafaf;
+
+}
+
+@media screen and (max-width: 660px) {
+    
+section{
+    width: 100%;
+    margin: 0px auto;
+}
+.inicio{
+    width: 250px ;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-inicio{
+    width: 80%;
+    height: 60px;
+    margin: 10px auto;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+   
+}
+
+.btn-inicio:hover{
+    width: 80%;
+    height: 60px;
+    margin: 10px auto;
+    color: #fff;
+    background-color: #0a3871;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    font-size: 1em;
+   
+}
+.agregar{
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    visibility: collapse;
+    top: 120px;
+}
+input{
+    height: 60px;
+    text-align: center;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    background: #f8f8f8;
+    font-size: 1em;
+    color: #0a3871;
+}
+.btn-agregar{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-agregar-g{
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+}
+.btn-agregar-g:hover{
+    background: #0a3871;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+    font-size: 1em;
+}
+
+.jugar{
+    width: 80%;
+    margin: 10px auto;
+    visibility: collapse;
+    position: absolute;
+    top: 100px;
+}
+.img-ahorcado{
+    width: 100%;
+    margin: 10px auto;
+}
+img#imagen {
+    width: 100%;
+    height: 50%;
+}
+
+samp{
+    text-align: center;
+}
+.oculto {
+
+    margin: 20px 14%;
+    width: 100%;
+    color: #00fc26;
+   visibility: collapse;
+}
+
+span#mensajeDerrota {
+    visibility: collapse;
+    margin: 6px 19%;
+    padding: 0px;
+    color: #ff0000;
+    font-size: 7pt;
+}
+
+span.equivocadas {
+    margin: 5px;
+    font-size: 1em;
+}
+
+.correctas{
+    margin: 10px ;
+    padding: 10px;
+}
+.incorrectas{
+    margin: 10px ;
+    padding: 10px;
+
+}
+.btn-jugar {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-jugar-j{
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+}
+.btn-jugar-j:hover{
+    background: #0a3871;
+    border: 2px solid #0a3871;
+    border-radius: 14px;
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+    width: 48%;
+    margin: 2px auto;
+    font-size: 1em;
+}
+
+.correctas{
+    text-align: center;
+    padding: 9px;
+    font-size: 1em;
+}
+
+
+#spanLetras {
+    margin: 3px;
+    border-bottom: 6px solid #1069bd;
+    animation: anim-reslt 4s linear;
+    color: #1069bd;
+    font-size: 1em;
+    padding: 5px;
+}
+    
+}
+
+
+div#palabrasEquivocadas {
+    text-align: center;
+    padding: 10px;
+    color: #afafaf;
+ 
+}

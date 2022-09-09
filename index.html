@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<title>AhorcadoGame</title>
+	</head>
+	<body>
+		<header>
+			<div id="logoAlura"> 
+				<a href="https://www.aluracursos.com/"><img src="img/Vector_logo.png" alt="logo_alura"> </a>
+			</div>
+		</header>
+		<main>
+
+			<section>
+				<div class="inicio" id="mainDisplay">
+					<button class="btn-inicio" id="iniciarJuego" class="blueButton iniciarJuego">Iniciar juego</button>
+					<button class="btn-inicio" id="nuevaPalabra" class="greyButton nuevaPalabra">Agregar Nueva palabra</button>
+				
+				</div>
+
+				<div  class="agregar" id="saveCancelNewWord">
+					<input type="text" id="inputFrase" class="inputBox" maxlength="8" placeholder="Ingresar una palabra">
+					<div id="adviceDiv"> <img src="img/Vector_advice.png" alt="image_admiration"><p> Máx. de 8 Letras, No
+						números,
+						No caracterés especiales, No espacios</p></div>
+					<div class="btn-agregar" id="saveCancelBtn">
+						<button class="btn-agregar-g" id="guardarRemplazarbtn"> Guardar y Reemplazar </button>
+						<button class="btn-agregar-g" id="cancelarBtn"> Cancelar </button>
+					</div>
+				</div>
+
+				<div class="jugar" id="nuevoJuegoDiv">
+					<div  class="img-ahorcado" id="ahorcadoDiv"> <img id="imagen" src="img/Personajes/p1.png" height="300px" width="500px" alt="">
+					</div>
+					<span  class="oculto" id="mensajeGanador"> Ganaste Felicidades!! </span>
+					<span id="mensajeDerrota">Fin del juego!! </span>
+					<div class="correctas" id="palabrasCorrectas"></div>
+					<div class="incorrectas" id="palabrasEquivocadas"></div>
+					<div  class="btn-jugar" id="nuevoDesistirDiv">
+						<button class="btn-jugar-j" id="nuevoJuegoBtn"> Nuevo Juego </button>
+						<button class="btn-jugar-j"  id="desistirBtn"> Desistir </button>
+					</div>
+				</div>
+			</section>	
+		</main>
+	
+	</body>
+	<script src="js/app.js"></script>
+</html>
+
